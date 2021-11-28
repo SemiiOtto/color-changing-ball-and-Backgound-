@@ -1,0 +1,31 @@
+//colX= the x axis for the mouse 
+//colY= the y axis for the mouse
+//colCX= circle axis x
+//colCY= circle axis y
+
+var colX = 0;
+var colY = 0;
+var colCX = 0;
+var colCY = 0;
+function setup() {
+  createCanvas(600, 600);
+}
+
+function draw() {
+  background(colX,92,colY,50);
+  colX=map(mouseX,0,600,0,255);
+  colY=map(mouseY,0,600,0,255);
+  colCX=map(mouseX,0,600,0,260);
+  colCY=map(mouseY,0,600,0,260)
+  ellipse(mouseX,mouseY,63,63)
+  fill(colCY,0,colCX,95)
+  noStroke();
+}
+
+
+
+//remapped for different set of valus to equal the same after processing is done
+
+//Links
+//Fullscreen: https://editor.p5js.org/SemiiOtto/full/U73jYE-EI
+//Editor and code: https://editor.p5js.org/SemiiOtto/sketches/U73jYE-EI
